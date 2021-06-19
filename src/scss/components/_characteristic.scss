@@ -1,0 +1,109 @@
+.characteristic__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 0 30px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: (1250px)) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    padding: 0;
+  }
+}
+.characteristic__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+  margin-right: 30px;
+  margin-bottom: 39px;
+
+  &:nth-child(1) {
+    background: url(../../img/main-camera.png) no-repeat left;
+    background-size: 31px;
+    height: 45px;
+  }
+  &:nth-child(2) {
+    background: url(../../img/datchik.png) no-repeat left;
+    background-size: 31px;
+    height: 45px;
+  }
+  &:nth-child(3) {
+    background: url(../../img/superangle.png) no-repeat left;
+    background-size: 31px;
+    height: 45px;
+  }
+  &:nth-child(4) {
+    background: url(../../img/macro-lens.png) no-repeat left;
+    background-size: 31px;
+    height: 45px;
+  }
+  @media (min-width: (1250px)) {
+    width: 100%;
+    &:nth-child(1) {
+      background: url(../../img/main-camera-desktop.svg) no-repeat left;
+      background-size: 44px;
+      height: 64px;
+    }
+    &:nth-child(2) {
+      background: url(../../img/datchik-desktop.svg) no-repeat left;
+      background-size: 44px;
+      height: 64px;
+    }
+    &:nth-child(3) {
+      background: url(../../img/superangle-desktop.svg) no-repeat left;
+      background-size: 44px;
+      height: 64px;
+    }
+    &:nth-child(4) {
+      background: url(../../img/macro-lens-desktop.svg) no-repeat left;
+      background-size: 44px;
+      height: 64px;
+    }
+  }
+  :nth-child(1) {
+    background: url();
+  }
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+.characteristic__text {
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-light-black);
+  @media (min-width: (767px)) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  @media (min-width: (1250px)) {
+    margin-left: 50px;
+    font-size: 22px;
+    line-height: 24px;
+    width: 100%;
+  }
+  & span {
+    display: block;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    margin: 0;
+    padding: 0;
+    @media (min-width: (767px)) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

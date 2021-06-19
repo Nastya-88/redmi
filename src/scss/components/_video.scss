@@ -1,0 +1,118 @@
+.video {
+  &__container {
+    padding: 60px 20px 0 20px;
+    background: var(--color-light-black);
+    @media (min-width: (1250px)) {
+      display: flex;
+      justify-content: space-between;
+      height: 531px;
+      padding: 0;
+    }
+  }
+
+  &__text {
+    color: var(--color-white);
+    margin-bottom: 40px;
+    @media (min-width: (1250px)) {
+      width: 50%;
+      margin-bottom: 0;
+      padding: 148px 116px 147px 106px;
+    }
+  }
+  &__player {
+    margin: 0 auto;
+    @media (min-width: (1250px)) {
+      width: 50%;
+    }
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    @media (min-width: (767px)) {
+      font-size: 22px;
+      line-height: 36px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 22px;
+      line-height: 40px;
+    }
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 36px;
+    @media (min-width: (767px)) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 48px;
+      line-height: 52px;
+    }
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    @media (min-width: (767px)) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  &__start {
+    padding-bottom: 60px;
+    border-radius: 15px;
+    position: relative;
+
+    @media (min-width: (1250px)) {
+      border-radius: 0;
+      padding-bottom: 0;
+    }
+    svg {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      z-index: 10;
+      @media (min-width: (1250px)) {
+        path {
+          width: 26px;
+        }
+      }
+    }
+  }
+  &__image {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    @media (min-width: (1250px)) {
+      border-radius: 0;
+      height: 100%;
+    }
+  }
+  &__play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--color-white);
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    @media (min-width: (767px)) {
+      top: 28%;
+      left: 45%;
+    }
+    @media (min-width: (1250px)) {
+      width: 120px;
+      height: 120px;
+      top: 40%;
+      left: -60px;
+    }
+  }
+  &__banner {
+    padding: 42px 20px;
+  }
+}

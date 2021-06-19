@@ -1,0 +1,16 @@
+// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+
+@import './components/start';
+@import './components/power';
+@import './components/text-block';
+@import './components/colors';
+@import './components/protection';
+@import './components/camera';
+@import './components/characteristic';
+@import './components/video';
+@import './components/battery';
+@import './components/processor';
+@import './components/display';
+@import './components/speakers';
+@import './components/functions';
+@import './components/notes';

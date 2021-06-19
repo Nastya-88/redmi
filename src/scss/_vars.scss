@@ -1,0 +1,18 @@
+:root {
+  //color
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray-black: #333333;
+  --color-light-black: #2f2f2f;
+  --color-orange: #fd9162;
+  --color-dark-orange: #ff8a55;
+
+  //отступы
+  --grid-gap: 20px;
+  --main-offset: 40px;
+
+  //шрифты
+  --font-family: 'Roboto', san-serif;
+  --middle-font: 400 30px / 140% var(--font-family);
+  --small-font: 400 14px / 140% var(--font-family);
+}

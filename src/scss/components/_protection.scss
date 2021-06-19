@@ -1,0 +1,191 @@
+.protection {
+  width: 100%;
+  background: var(--color-light-black);
+  @media (min-width: (1250px)) {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-light-black);
+  }
+  &__container {
+    background: url(../../img/protection-new.png) no-repeat bottom right 40px;
+    background-size: 100%;
+    padding-bottom: 0;
+    @media (min-width: (767px)) {
+      height: 800px;
+    }
+    @media (min-width: (1250px)) {
+      padding: 96px 126px 0 106px;
+      width: 50%;
+      height: 580px;
+      background: url(../../img/protection-new-desktop.png) no-repeat bottom
+        right 40px;
+      background-size: 100%;
+    }
+  }
+
+  &__new {
+    height: 430px;
+    @media (min-width: (1250px)) {
+      height: 580px;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    @media (min-width: (767px)) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 15px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 48px;
+      line-height: 48px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+  &__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    @media (min-width: (767px)) {
+      font-size: 20px;
+      line-height: 36px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 22px;
+      line-height: 40px;
+      text-align: left;
+    }
+  }
+  &__descr {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-white);
+    @media (min-width: (767px)) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @media (min-width: (1250px)) {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+  &__spray {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'photo text'
+      'text2 photo2';
+    @media (min-width: (1250px)) {
+      width: 50%;
+      height: 580px;
+      grid-template-areas:
+        'photo text'
+        'photo photo2'
+        'text2 photo2';
+    }
+  }
+  &__spray-item {
+    background: #454545;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    @media (min-width: (1250px)) {
+      padding: 90px 124px 90px 31px;
+      align-items: start;
+    }
+  }
+  &-photo {
+    grid-area: photo;
+    height: 217px;
+    @media (min-width: (1250px)) {
+      height: 313px;
+    }
+  }
+  &-photo2 {
+    grid-area: photo2;
+    height: 243px;
+    @media (min-width: (1250px)) {
+      height: 313px;
+    }
+  }
+  &-text {
+    grid-area: text;
+    height: 217px;
+    @media (min-width: (1250px)) {
+      height: 267px;
+    }
+  }
+  &-text2 {
+    grid-area: text2;
+    height: 243px;
+    @media (min-width: (1250px)) {
+      height: 267px;
+    }
+  }
+
+  &__spray-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 5px;
+    @media (min-width: (1250px)) {
+      font-size: 22px;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+  &__spray-descr {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0;
+    @media (min-width: (1250px)) {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+    }
+  }
+}
+.protection__spray-item:nth-child(1) {
+  background: var(--color-light-black) url(../../img/protection-spray.png)
+    no-repeat center;
+  background-size: cover;
+  @media (min-width: (1250px)) {
+    background: var(--color-light-black)
+      url(../../img/protection-spray-desktop.png) no-repeat center;
+    background-size: cover;
+  }
+}
+.protection__spray-item:nth-child(4) {
+  background: url(../../img/protection-spray2.png) no-repeat center;
+  background-size: cover;
+  @media (min-width: (1250px)) {
+    background: url(../../img/protection-spray2-desktop.png) no-repeat center;
+    background-size: cover;
+  }
+}
